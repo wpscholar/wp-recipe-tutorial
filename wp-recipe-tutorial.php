@@ -13,5 +13,21 @@
  * Domain Path:  /languages
  */
 
+use RecipeTutorial\Recipe_Post_Type;
+
 define( 'RECIPE_TUTORIAL_PATH', plugin_dir_path( __FILE__ ) );
 define( 'RECIPE_TUTORIAL_URL', plugin_dir_url( __FILE__ ) );
+
+// Load classes
+require __DIR__ . '/includes/Recipe_Post_Type.php';
+
+// Register action hooks
+require __DIR__ . '/includes/actions.php';
+
+// Register activation hook
+register_activation_hook( __FILE__, function () {
+
+	Recipe_Post_Type::register_post_type();
+	flush_rewrite_rules();
+
+} );
