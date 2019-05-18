@@ -44,6 +44,8 @@ class Recipe_Cuisine_Taxonomy {
 			'public'            => true,
 			'hierarchical'      => true,
 			'show_admin_column' => true,
+			'show_in_rest'      => true,
+			'rest_base'         => 'recipe-cuisines',
 			'rewrite'           => array(
 				'slug'       => 'recipes/cuisines',
 				'with_front' => true,

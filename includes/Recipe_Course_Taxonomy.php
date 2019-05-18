@@ -44,6 +44,8 @@ class Recipe_Course_Taxonomy {
 			'public'            => true,
 			'hierarchical'      => true,
 			'show_admin_column' => true,
+			'show_in_rest'      => true,
+			'rest_base'         => 'recipe-courses',
 			'rewrite'           => array(
 				'slug'       => 'recipes/courses',
 				'with_front' => false,

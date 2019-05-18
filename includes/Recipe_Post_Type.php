@@ -22,8 +22,8 @@ class Recipe_Post_Type {
 	public static function register_post_type() {
 
 		register_post_type( self::POST_TYPE, array(
-			'label'       => esc_html__( 'Recipes', 'wp-recipe-tutorial' ),
-			'labels'      => array(
+			'label'        => esc_html__( 'Recipes', 'wp-recipe-tutorial' ),
+			'labels'       => array(
 				'name'                  => esc_html_x( 'Recipes', 'post type general name', 'wp-recipe-tutorial' ),
 				'singular_name'         => esc_html_x( 'Recipe', 'post type singular name', 'wp-recipe-tutorial' ),
 				'add_new'               => esc_html_x( 'Add New', 'recipe', 'wp-recipe-tutorial' ),
@@ -43,14 +43,16 @@ class Recipe_Post_Type {
 				'items_list_navigation' => esc_html__( 'Recipes list navigation', 'wp-recipe-tutorial' ),
 				'items_list'            => esc_html__( 'Recipes list', 'wp-recipe-tutorial' ),
 			),
-			'public'      => true,
-			'has_archive' => true,
-			'menu_icon'   => 'dashicons-carrot',
-			'rewrite'     => array(
+			'public'       => true,
+			'has_archive'  => true,
+			'menu_icon'    => 'dashicons-carrot',
+			'rewrite'      => array(
 				'slug'       => 'recipes',
 				'with_front' => false,
 			),
-			'supports'    => array(
+			'show_in_rest' => true,
+			'rest_base'    => 'recipes',
+			'supports'     => array(
 				'title',
 				'editor',
 				'thumbnail',
