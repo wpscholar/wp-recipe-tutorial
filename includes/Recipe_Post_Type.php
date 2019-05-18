@@ -58,6 +58,14 @@ class Recipe_Post_Type {
 				'thumbnail',
 				'revisions',
 			),
+			'template'     => [
+				[ 'core/paragraph', [ 'placeholder' => 'Enter a description of your recipe here...' ] ],
+				[ 'core/paragraph', [ 'placeholder' => 'Servings: 2' ] ],
+				[ 'core/heading', [ 'content' => 'Ingredients' ] ],
+				[ 'core/list', [] ],
+				[ 'core/heading', [ 'content' => 'Instructions' ] ],
+				[ 'core/paragraph', [ 'placeholder' => 'Enter recipe instructions here...' ] ],
+			],
 		) );
 
 	}
