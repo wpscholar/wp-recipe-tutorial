@@ -25,8 +25,9 @@ require __DIR__ . '/includes/Recipe_Post_Type.php';
 require __DIR__ . '/includes/Recipe_Course_Taxonomy.php';
 require __DIR__ . '/includes/Recipe_Cuisine_Taxonomy.php';
 
-// Register action hooks
+// Register hooks
 require __DIR__ . '/includes/actions.php';
+require __DIR__ . '/includes/filters.php';
 
 // Register activation hook
 register_activation_hook( __FILE__, function () {
