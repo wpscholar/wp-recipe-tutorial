@@ -15,3 +15,5 @@ add_action( 'init', function () {
 	register_taxonomy_for_object_type( Recipe_Cuisine_Taxonomy::TAXONOMY, Recipe_Post_Type::POST_TYPE );
 
 } );
+
+add_action( 'rest_api_init', [ Recipe_Post_Type::class, 'register_rest_fields' ] );

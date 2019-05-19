@@ -70,4 +70,20 @@ class Recipe_Post_Type {
 
 	}
 
+	/**
+	 * Register REST API fields
+	 */
+	public static function register_rest_fields() {
+
+		register_rest_field( self::POST_TYPE, 'recipe_yield', [
+			'get_callback'    => function ( $post, $name, $request, $post_type ) {
+				return absint( get_post_meta( $post['id'], "_rtut_{$name}", true ) );
+			},
+			'update_callback' => function ( $value, \WP_Post $post, $name ) {
+				return update_post_meta( $post->ID, "_rtut_{$name}", absint( $value ) );
+			}
+		] );
+
+	}
+
 }
