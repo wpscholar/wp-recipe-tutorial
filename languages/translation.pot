@@ -1,0 +1,16 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: babel-plugin-makepot\n"
+
+#: source/js/blocks/recipe-yield.js:12
+msgid "recipe"
+msgstr ""
+
+#: source/js/blocks/recipe-yield.js:56
+msgid "Serves"
+msgstr ""
+
+#: source/js/blocks/recipe-yield.js:7
+msgid "Recipe Yield"
+msgstr ""

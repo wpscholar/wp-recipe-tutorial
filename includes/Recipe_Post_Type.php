@@ -56,6 +56,7 @@ class Recipe_Post_Type {
 				'title',
 				'editor',
 				'thumbnail',
+				'custom-fields',
 				'revisions',
 			),
 			'template'     => [
