@@ -16,22 +16,6 @@ class Recipe_Yield_Block {
 	 */
 	public static function register_block() {
 
-		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-
-		wp_register_style(
-			'rtut-block-css',
-			RECIPE_TUTORIAL_URL . "assets/css/blocks{$suffix}.css",
-			[ 'wp-edit-blocks' ],
-			filemtime( RECIPE_TUTORIAL_PATH . "assets/css/blocks{$suffix}.css" )
-		);
-
-		wp_register_script(
-			'rtut-editor-js',
-			RECIPE_TUTORIAL_URL . "assets/js/blocks{$suffix}.js",
-			[ 'wp-blocks', 'wp-components', 'wp-element', 'wp-i18n' ],
-			filemtime( RECIPE_TUTORIAL_PATH . "assets/js/blocks{$suffix}.js" )
-		);
-
 		register_meta(
 			'post',
 			'_rtut_recipe_yield',
