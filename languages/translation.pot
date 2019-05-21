@@ -3,8 +3,29 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "X-Generator: babel-plugin-makepot\n"
 
+#: source/js/blocks/recipe-card.js:16
+#: source/js/blocks/recipe-card.js:15
+#: source/js/blocks/recipe-card.js:14
+#: source/js/blocks/recipe-card.js:12
+#: source/js/blocks/recipe-card.js:11
 #: source/js/blocks/recipe-yield.js:12
 msgid "recipe"
+msgstr ""
+
+#: source/js/blocks/recipe-card.js:44
+msgid "Please enter a Recipe ID"
+msgstr ""
+
+#: source/js/blocks/recipe-card.js:48
+msgid "Submit"
+msgstr ""
+
+#: source/js/blocks/recipe-card.js:53
+msgid "Recipe ID"
+msgstr ""
+
+#: source/js/blocks/recipe-card.js:9
+msgid "Recipe Card"
 msgstr ""
 
 #: source/js/blocks/recipe-yield.js:56

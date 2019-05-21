@@ -3,6 +3,7 @@
 use RecipeTutorial\Recipe_Post_Type;
 use RecipeTutorial\Recipe_Course_Taxonomy;
 use RecipeTutorial\Recipe_Cuisine_Taxonomy;
+use RecipeTutorial\Recipe_Card_Block;
 use RecipeTutorial\Recipe_Yield_Block;
 
 add_action( 'init', [ Recipe_Course_Taxonomy::class, 'register_taxonomy' ] );
@@ -10,6 +11,7 @@ add_action( 'init', [ Recipe_Cuisine_Taxonomy::class, 'register_taxonomy' ] );
 
 add_action( 'init', [ Recipe_Post_Type::class, 'register_post_type' ] );
 
+add_action( 'init', [ Recipe_Card_Block::class, 'register_block' ] );
 add_action( 'init', [ Recipe_Yield_Block::class, 'register_block' ] );
 
 add_action( 'init', function () {
@@ -29,7 +31,7 @@ add_action( 'init', function () {
 	wp_register_script(
 		'rtut-editor-js',
 		RECIPE_TUTORIAL_URL . "assets/js/blocks{$suffix}.js",
-		[ 'wp-blocks', 'wp-components', 'wp-element', 'wp-i18n' ],
+		[ 'wp-blocks', 'wp-components', 'wp-editor', 'wp-element', 'wp-i18n' ],
 		filemtime( RECIPE_TUTORIAL_PATH . "assets/js/blocks{$suffix}.js" )
 	);
 

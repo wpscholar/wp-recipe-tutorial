@@ -24,6 +24,7 @@ define( 'RECIPE_TUTORIAL_URL', plugin_dir_url( __FILE__ ) );
 require __DIR__ . '/includes/Recipe_Post_Type.php';
 require __DIR__ . '/includes/Recipe_Course_Taxonomy.php';
 require __DIR__ . '/includes/Recipe_Cuisine_Taxonomy.php';
+require __DIR__ . '/includes/Recipe_Card_Block.php';
 require __DIR__ . '/includes/Recipe_Yield_Block.php';
 
 // Register hooks

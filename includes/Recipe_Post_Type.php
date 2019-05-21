@@ -55,6 +55,7 @@ class Recipe_Post_Type {
 			'supports'     => array(
 				'title',
 				'editor',
+				'excerpt',
 				'thumbnail',
 				'custom-fields',
 				'revisions',
